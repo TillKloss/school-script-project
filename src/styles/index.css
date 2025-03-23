@@ -1,4 +1,4 @@
-/*define default design against overwrite*/
+/***************define default design against overwrite***************/
 html {
     background-color: var(--background-color);
     color: var(--text-primary);
@@ -29,12 +29,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--text-primary);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 button {
@@ -48,6 +48,7 @@ button {
 }
 
 button:hover {
+    transition: all 0.4s ease 0.1s;
     background-color: var(--secondary-color);
 }
 
@@ -81,5 +82,108 @@ input, textarea, select {
 }
 
 input::placeholder {
+    color: var(--text-secondary);
+}
+
+/***************design section***************/
+
+/*------HEADER------*/
+
+.main-header .nav-logo {
+    width: 150px;
+    height: 28px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    color: var(--text-primary);
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-list li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-day {
+    display: none; /*inline block other state */
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+/*------MAIN-SECTION------*/
+
+.overview {
+    padding: 20px;
+    margin: 0 15%;
+}
+
+.overview button img {
+    max-width: 20px;
+    max-height: 20px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.box-card {
+    background-color: var(--surface-color);
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 22px;
+    transition: all 0.3s ease 0s;
+}
+
+.box-card:hover {
+    transition: all 0.4s ease 0.1s;
+    background-color: var(--primary-color);
+}
+
+.box-card h3 {
+    color: var(--text-primary);
+    margin-top: 4px;
+}
+
+.box-card:hover h3,
+.box-card:hover p {
+    transition: all 0.4s ease 0.1s;
+    color: var(--surface-color);
+}
+
+.box-card p {
+    margin: 0 10%;
+    font-size: 12px;
     color: var(--text-secondary);
 }

@@ -3,12 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KnowPlex | Know now | Learn now">
     <link rel="stylesheet" href="styles/index.css">
     <link id="theme-stylesheet" rel="stylesheet" href="styles/themes/theme.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>KnowPlex | Know now</title>
 </head>
 <body>
-<p>Hello World</p>
+<!-------HEADER-SECTION------->
+<header class="main-header">
+    <img class="nav-logo" src="images/Logo.png" alt="Logo">
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a class="nav-content" href="#main-category">Lektionen</a></li>
+            <li><a class="nav-credit" href="#">Credit-Shop</a></li>
+            <li><img class="nav-day" src="images/day.svg"></li>
+        </ul>
+    </nav>
+</header>
+
+<!-------MAIN-SECTION------->
+<main class="overview">
+    <div class="main-category">
+        <section id="category" class="category">
+            <h2>Software-Entwicklung</h2>
+            <div class="grid-card">
+                <div class="box-card">
+                    <h3>Python</h3>
+                    <p>Teste dein Wissen zu den grundlegenden Konzepten der Python-Programmierung. Dazu gehören Datentypen, Variablen, Schleifen, Bedingungen und Funktionen. Lerne, wie du Python für einfache Aufgaben und Anwendungen verwendest.</p>
+                </div>
+                <div class="box-card">
+                    <h3>Java</h3>
+                    <p>Überprüfe dein Verständnis der wichtigsten Konzepte der Java-Programmierung. Dies umfasst Variablen, Schleifen, Bedingungen, Arrays und die objektorientierte Programmierung. Finde heraus, wie du mit Java solide Anwendungen entwickeln kannst.</p>
+                </div>
+                <div class="box-card">
+                    <h3>C</h3>
+                    <p>Teste dein Wissen über die grundlegenden Konzepte der C-Programmierung. Hierzu gehören Datentypen, Arrays, Pointer, Funktionen und die Arbeit mit Speicher. Lerne, wie du einfache Programme und Systeme mit C erstellst.</p>
+                </div>
+                <div class="box-card">
+
+                    <h3>Web</h3>
+                    <p>Teste dein Wissen über die grundlegenden Technologien der Web-Entwicklung. Dazu gehören HTML, CSS, JavaScript und die Struktur von Webseiten. Lerne, wie du interaktive und ansprechende Webseiten von Grund auf baust.</p>
+                </div>
+            </div>
+            <br>
+            <button id="btn-software">Alle Lektionen <img src="images/right-arrow.svg"></button>
+        </section>
+
+        <hr>
+
+        <section class="category">
+            <h2>Systemadministration</h2>
+            <div class="grid-card">
+                <div class="box-card">
+                    <h3>Security</h3>
+                    <p>Teste dein Wissen über die grundlegenden Konzepte der Speicherverwaltung in einem Betriebssystem. Dazu gehören die Unterschiede zwischen RAM, ROM, virtuellen und physischen Speicher, Speicheraufteilung und das Speichermanagement. Lerne, wie Betriebssysteme den Speicher effizient nutzen und optimieren.</p>
+                </div>
+                <div class="box-card">
+                    <h3>Linux</h3>
+                    <p>Überprüfe dein Verständnis von Shell-Skripting in Linux. Dies umfasst grundlegende Befehle, Variablen, Schleifen, Bedingungen und die Automatisierung von Aufgaben. Lerne, wie du mit Shell-Skripten wiederkehrende Aufgaben in einem Linux-Umfeld effizient erledigen kannst.</p>
+                </div>
+                <div class="box-card">
+                    <h3>Hardware</h3>
+                    <p>Teste dein Wissen über die Funktionsweise von Prozessoren. Dies umfasst die grundlegenden Komponenten eines Prozessors, wie die ALU, Register und Cache. Lerne, wie Prozessoren Berechnungen durchführen und welche Rolle sie in der Systemleistung und -optimierung spielen.</p>
+                </div>
+                <div class="box-card">
+
+                    <h3>Printer</h3>
+                    <p>Überprüfe dein Verständnis über die Verwaltung von Druckern und anderen Peripheriegeräten in einem System. Dies umfasst die Installation, Konfiguration und Fehlerbehebung von Druckern sowie die Interaktion von Druckern mit Betriebssystemen. Lerne, wie man häufige Druckerprobleme diagnostiziert und behebt, ohne auf Hardware-Support angewiesen zu sein.</p>
+                </div>
+            </div>
+            <br>
+            <button id="btn-systemadmin">Alle Lektionen <img src="images/right-arrow.svg"></button>
+        </section>
+    </div>
+</main>
+<!-------FOOTER-SECTION------->
+<footer class="main-footer"></footer>
 
 </body>
 </html>
