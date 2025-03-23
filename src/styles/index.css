@@ -1,0 +1,85 @@
+/*define default design against overwrite*/
+html {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container, .card {
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.success {
+    background-color: var(--success-color);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.error {
+    background-color: var(--error-color);
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.warning {
+    background-color: var(--warning-color);
+    color: #212529;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+input, textarea, select {
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    border: 1px solid var(--secondary-color);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: var(--text-secondary);
+}
