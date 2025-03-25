@@ -1,0 +1,22 @@
+{
+  "python": {
+    "title": "Teste dein Wissen über Python!",
+    "questions": [
+      {
+        "question": "Was bedeutet 'PEP' in Python?",
+        "answers": ["Python Enhancement Proposal", "Pretty Easy Programming", "Performance Evaluation Process"],
+        "correct": 0
+      }
+    ]
+  },
+  "java": {
+    "title": "Teste dein Wissen über Java!",
+    "questions": [
+      {
+        "question": "Was ist die Hauptklasse in jeder Java-Anwendung?",
+        "answers": ["Main", "Start", "Begin"],
+        "correct": 0
+      }
+    ]
+  }
+}
