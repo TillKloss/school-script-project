@@ -9,6 +9,7 @@ body {
     color: var(--text-primary);
     margin: 0;
     padding: 0;
+    margin-top: 120px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,6 +27,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
+    text-transform: capitalize;
 }
 
 a {
@@ -101,11 +103,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
     z-index: 1000;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px;
 }
 
 .nav-list {
@@ -130,3 +134,78 @@ header {
 }
 
 /*------MAIN-SECTION------*/
+
+#quiz-title-ns {
+    text-align: center;
+    padding: 16px;
+    font-size: 32px;
+}
+
+#quiz-main {
+    margin: 0 15%;
+}
+
+.grid-quiz {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto 40px auto; /*leere row, damit mid und bottom mehr platz haben*/
+    gap: 16px;
+}
+
+#grid-question-card {grid-column: span 3; grid-row: 1;}
+#a1 {grid-column-start: 1;grid-column-end: 1;}
+#a2 {grid-column-start: 2;grid-column-end: 2;}
+#a3 {grid-column-start: 3;grid-column-end: 3;}
+#grid-hint-card {grid-column: span 2; grid-row: 3;}
+#grid-credit-card {grid-column-start: 3;grid-column-end: 3;}
+
+.grid-top-card , .grid-answer-card, .grid-bottom-card{
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+    background-color: var(--surface-color);
+    padding: 30px 16px 30px 16px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#grid-question-card {
+    font-size: 24px;
+}
+
+#grid-hint-card {
+    transition: box-shadow 0.3s ease-in-out 0.1s;
+    border: 2px solid var(--warning-color);
+}
+
+#grid-question-card, #grid-credit-card {
+    transition: box-shadow 0.3s ease-in-out 0.1s;
+    border: 2px solid var(--primary-color);
+}
+
+#grid-question-card:hover, #grid-credit-card:hover {
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.grid-answer-card {
+    transition: box-shadow 0.3s ease-in-out 0.1s;
+    border: 2px solid var(--accent-color);
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+    margin-bottom: 40px;
+}
+
+.grid-answer-card:hover {
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+#grid-hint-card:hover {
+    box-shadow: 0 0 10px var(--warning-color);
+}

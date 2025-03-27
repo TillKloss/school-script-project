@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="KnowPlex | Know now | Learn now">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/quiz.css">
     <link id="theme-stylesheet" rel="stylesheet" href="styles/themes/theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/quiz.js"></script>
     <title>KnowPlex | Know now</title>
 </head>
 <body>
@@ -24,14 +25,14 @@
 <!-------MAIN-SECTION------->
 <main>
     <div id="quiz-main">
-        <h2 id="quiz-title"></h2>
+        <h2 id="quiz-title-ns">Lektion: <span id="quiz-title">Frage</span></h2>
         <div class="grid-quiz">
-            <div id="grid-question-card" class="grid-card">Frage</div>
-            <div class="grid-answer-card">A1</div>
-            <div class="grid-answer-card">A2</div>
-            <div class="grid-answer-card">A3</div>
-            <div class="grid-hint-card">Tipp</div>
-            <div class="grid-credit-card">Credits</div>
+            <div id="grid-question-card" class="grid-top-card">Frage</div> <!--a1 = answer1-->
+            <div id="a1" class="grid-answer-card">A1</div>
+            <div id="a2" class="grid-answer-card">A2</div>
+            <div id="a3" class="grid-answer-card">A3</div>
+            <div id="grid-hint-card" class="grid-bottom-card">Tipp</div>
+            <div id="grid-credit-card" class="grid-bottom-card">Credits</div>
 
         </div>
     </div>
