@@ -3,9 +3,20 @@
     "title": "Teste dein Wissen über Python!",
     "questions": [
       {
+        "id": "python-1",
         "question": "Was bedeutet 'PEP' in Python?",
         "answers": ["Python Enhancement Proposal", "Pretty Easy Programming", "Performance Evaluation Process"],
-        "correct": 0
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "PEPs beschreiben neue Features oder Regeln für Python."
+      },
+      {
+        "id": "python-2",
+        "question": "Wie definiert man eine Funktion in Python?",
+        "answers": ["function meineFunktion():", "def meineFunktion():", "fun meineFunktion():"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "In Python startet jede Funktion mit einem speziellen Schlüsselwort, gefolgt vom Funktionsnamen."
       }
     ]
   },
@@ -13,10 +24,65 @@
     "title": "Teste dein Wissen über Java!",
     "questions": [
       {
+        "id": "java-1",
         "question": "Was ist die Hauptklasse in jeder Java-Anwendung?",
         "answers": ["Main", "Start", "Begin"],
-        "correct": 0
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Sie enthält die Methode public static void main(String[] args)."
+      },
+      {
+        "id": "java-2",
+        "question": "Welches Schlüsselwort wird verwendet, um eine Klasse zu erben?",
+        "answers": ["extends", "implements", "inherits"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Damit kann eine Subklasse die Eigenschaften einer Superklasse übernehmen."
+      }
+    ]
+  },
+  "c": {
+    "title": "Teste dein Wissen über C!",
+    "questions": [
+      {
+        "id": "c-1",
+        "question": "Welche Header-Datei wird benötigt, um mit printf zu arbeiten?",
+        "answers": ["stdio.h", "stdlib.h", "string.h"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Diese Datei stellt Standardfunktionen wie printf und scanf bereit."
+      },
+      {
+        "id": "c-2",
+        "question": "Was ist das Ergebnis von 10 / 4 in C (Ganzzahldivision)?",
+        "answers": ["2.5", "2", "3"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Wenn du zwei ganze Zahlen dividierst, wird die Nachkommastelle abgeschnitten."
+      }
+    ]
+  },
+  "web": {
+    "title": "Teste dein Wissen über Webentwicklung!",
+    "questions": [
+      {
+        "id": "web-1",
+        "question": "Was macht das HTML-Tag <a>?",
+        "answers": ["Erstellt einen Absatz", "Verlinkt zu einer anderen Seite", "Bindet ein Bild ein"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Das Element wird oft mit einem 'href'-Attribut verwendet."
+      },
+      {
+        "id": "web-2",
+        "question": "Welche Eigenschaft in CSS ändert die Hintergrundfarbe eines Elements?",
+        "answers": ["color", "background-color", "border-color"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Sie beginnt mit 'background' und wird häufig mit HEX oder RGB-Werten kombiniert."
       }
     ]
   }
 }
+
+
