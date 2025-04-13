@@ -135,10 +135,14 @@ header {
 
 /*------MAIN-SECTION------*/
 
-#quiz-title-ns {
+/*h2 Lektion abgeschlossen*/
+#quiz-title-ns, h2 {
     text-align: center;
     padding: 16px;
     font-size: 32px;
+    background: linear-gradient(to right, var(--primary-color), var(--contrast-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #quiz-main {
@@ -150,6 +154,8 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto 40px auto; /*leere row, damit mid und bottom mehr platz haben*/
     gap: 16px;
+    background-color: rgba(var(--primary-color-rgb), 0.5);
+    padding: 22px;
 }
 
 #grid-question-card {grid-column: span 3; grid-row: 1;}
@@ -167,7 +173,6 @@ header {
     font-size: 22px;
     background-color: var(--surface-color);
     padding: 30px 16px 30px 16px;
-
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -177,35 +182,23 @@ header {
     font-size: 24px;
 }
 
-#grid-hint-card {
-    transition: box-shadow 0.3s ease-in-out 0.1s;
-    border: 2px solid var(--warning-color);
-}
-
-#grid-question-card, #grid-credit-card {
-    transition: box-shadow 0.3s ease-in-out 0.1s;
-    border: 2px solid var(--primary-color);
-}
-
-#grid-question-card:hover, #grid-credit-card:hover {
-    box-shadow: 0 0 10px var(--primary-color);
-}
-
 .grid-answer-card {
-    transition: box-shadow 0.3s ease-in-out 0.1s;
-    border: 2px solid var(--accent-color);
-    border-radius: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 55px;
-    margin-bottom: 40px;
+    transition: box-shadow 0.5s ease 0.1s;
+    margin-bottom: 22px;
+    border-radius: 50px;
 }
 
 .grid-answer-card:hover {
-    box-shadow: 0 0 10px var(--accent-color);
+    box-shadow: 0 2px 4px;
 }
 
-#grid-hint-card:hover {
-    box-shadow: 0 0 10px var(--warning-color);
+#quiz-hint-toast {
+    text-align: center;
+    opacity: 0.6;
+   margin-bottom: 30px;
+}
+
+#grid-credit-card img {
+    max-width: 22px;
+    max-height: 22px;
 }
