@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+body.dark-mode {
+    --primary-color: #CB6725;
+    --secondary-color: #965A38;
+    --contrast-color: #FFD166;
+    --background-color: #2C1F1A;
+    --surface-color: #3E2E27;
+    --text-primary: #FAF3E0;
+    --text-secondary: #C9B8A0;
+    --success-color: #A0C57F;
+    --error-color: #D9534F;
+    --warning-color: #F4A261;
+
+
+}
