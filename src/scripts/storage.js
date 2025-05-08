@@ -2,8 +2,8 @@
 const KEYS = {
     CREDITS: "credits",
     SOLVED_QUESTION: "solved_question",
-    BUYED_HINT: "buyed_hint",
-    BUYED_ITEMS: "buyed_items"
+    BUYED_HINT: "buyed_hint"
+
 };
 
 //-----------------------CREDIT SECTION--------------------------
@@ -111,35 +111,4 @@ function addBuyedHints(hint) {
 //debug Funktion
 function resetBuyedHints() {
     localStorage.removeItem(KEYS.BUYED_HINT);
-}
-
-//-----------------------SHOP SECTION--------------------------
-
-//sichert das buyed-items angelet wird
-function initBuyedItems() {
-    if (localStorage.getItem(KEYS.BUYED_ITEMS) === null) {
-        localStorage.setItem(KEYS.BUYED_ITEMS, JSON.stringify([]));
-    }
-}
-
-//Gibt die gekauften Tipps zurück
-function getBuyedItems() {
-    return JSON.parse(localStorage.getItem(KEYS.BUYED_ITEMS)) || [];
-}
-
-//Fügt einen Tipp zur Liste hinzu
-function addBuyedItems(item) {
-    let buyedItems = getBuyedItems();
-    if (buyedItems.includes(item)) {
-        return 0;
-    }
-    buyedItems.push(item);
-    localStorage.setItem(KEYS.BUYED_ITEMS, JSON.stringify(buyedItems));
-
-    return 1;
-}
-
-//debug Funktion
-function resetBuyedItems() {
-    localStorage.removeItem(KEYS.BUYED_ITEMS);
 }
