@@ -41,12 +41,13 @@ function showQuestion(index) {
     while (index < quizData["questions"].length && getSolvedQuestions().includes(quizData["questions"][index].question)) {
         index++;
     }
+
     if (index >= quizData.questions.length) {
         $("#quiz-main").html("<h2>Lektion abgeschlossen</h2>");
         return;
     }
 
-    currentQuizIndex = index;
+    currentQuizIndex = index; // -> Endlosschleife
 
     const questionData = quizData["questions"][index];
     const answerData = [questionData["answers"][0], questionData["answers"][1], questionData["answers"][2]];
