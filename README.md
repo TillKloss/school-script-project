@@ -29,4 +29,4 @@ für einen Tipp werden anhand der Schwierigkeit berechnet.
 - **hard** Belohnung 30 Credits | Kosten für Tipp: 15 Credits
 
 ## Hosting über Cloudflare
-*https://adb2a799.knowplex.pages.dev/*
+*https://knowplex.pages.dev/*
