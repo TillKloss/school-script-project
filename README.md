@@ -14,7 +14,7 @@ Ich werde eine interaktive Quiz- & Lernplattform entwickeln, die es Nutzern erm�
   - **Zusätzliche Fragenkataloge** (z. B. Python, Java, C, Netzwerktechnik)  
 
 ### Erweiterungen (optional, falls Zeit bleibt)
-- **Hosting & Speicherung** über Cloudflare Workers für eine längerfristige Erweiterbarkeit  
+- **Hosting & Speicherung** über Cloudflare Workers für eine längerfristige Erweiterbarkeit (✓)
 - **Highscore-Ranglisten** mit serverseitiger Speicherung  
 - **Login** zur Sicherung des eigenen Fortschritts
 
@@ -27,3 +27,6 @@ für einen Tipp werden anhand der Schwierigkeit berechnet.
 - **easy** Belohnung: 10 Credits | Kosten Tipp: 5 Credits
 - **medium** Belohnung 20 Credits | Kosten für Tipp: 10 Credits
 - **hard** Belohnung 30 Credits | Kosten für Tipp: 15 Credits
+
+## Hosting über Cloudflare
+*https://adb2a799.knowplex.pages.dev/*
