@@ -27,6 +27,7 @@ für einen Tipp werden anhand der Schwierigkeit berechnet.
 - **easy** Belohnung: 10 Credits | Kosten Tipp: 5 Credits
 - **medium** Belohnung 20 Credits | Kosten für Tipp: 10 Credits
 - **hard** Belohnung 30 Credits | Kosten für Tipp: 15 Credits
+
 Falsch beantwortete Fragen können nochmal beantwortet werden.
 
 ## Hosting über Cloudflare
