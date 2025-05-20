@@ -132,6 +132,14 @@ header {
     vertical-align: middle;
 }
 
+.header-credit-img {
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+}
+
+
+
 /*------MAIN-SECTION------*/
 
 .overview {
