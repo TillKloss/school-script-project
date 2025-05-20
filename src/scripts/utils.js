@@ -2,3 +2,4 @@
 function updateCreditsUI(value) {
     $("[data-credit-display='true']").text(value);
 }
+

@@ -112,6 +112,12 @@ header {
     padding: 20px;
 }
 
+.header-credit-img {
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+}
+
 .nav-list {
     list-style: none;
 }

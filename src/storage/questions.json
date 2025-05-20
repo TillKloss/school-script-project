@@ -5,7 +5,11 @@
       {
         "id": "python-1",
         "question": "Was bedeutet 'PEP' in Python?",
-        "answers": ["Python Enhancement Proposal", "Pretty Easy Programming", "Performance Evaluation Process"],
+        "answers": [
+          "Python Enhancement Proposal",
+          "Pretty Easy Programming",
+          "Performance Evaluation Process"
+        ],
         "correct": 0,
         "difficulty": "medium",
         "hint": "PEPs beschreiben neue Features oder Regeln für Python."
@@ -13,10 +17,78 @@
       {
         "id": "python-2",
         "question": "Wie definiert man eine Funktion in Python?",
-        "answers": ["function meineFunktion():", "def meineFunktion():", "fun meineFunktion():"],
+        "answers": [
+          "function meineFunktion():",
+          "def meineFunktion():",
+          "fun meineFunktion():"
+        ],
         "correct": 1,
         "difficulty": "easy",
         "hint": "In Python startet jede Funktion mit einem speziellen Schlüsselwort, gefolgt vom Funktionsnamen."
+      },
+      {
+        "id": "python-3",
+        "question": "Wie kommentiert man eine einzelne Zeile in Python?",
+        "answers": ["// Kommentar", "# Kommentar", "-- Kommentar"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Einzelne Kommentare beginnen in Python mit einem speziellen Zeichen."
+      },
+      {
+        "id": "python-4",
+        "question": "Welche Datenstruktur speichert Schlüssel-Wert-Paare?",
+        "answers": ["Liste", "Tupel", "Dictionary"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Diese Struktur wird mit geschweiften Klammern geschrieben."
+      },
+      {
+        "id": "python-5",
+        "question": "Was ist das Ergebnis von 3 * 'hi'?",
+        "answers": ["'hihihi'", "'hi3'", "Fehlermeldung"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Strings können in Python mit einem Operator vervielfacht werden."
+      },
+      {
+        "id": "python-6",
+        "question": "Wie überprüft man den Typ einer Variable?",
+        "answers": ["type(var)", "typeof(var)", "checktype(var)"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Diese eingebaute Funktion liefert z. B. <class 'int'> zurück."
+      },
+      {
+        "id": "python-7",
+        "question": "Welche Schleife wird verwendet, um über eine Liste zu iterieren?",
+        "answers": ["for", "while", "loop"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Diese Schleife wird oft mit 'in' kombiniert."
+      },
+      {
+        "id": "python-8",
+        "question": "Was gibt 'len(\"Hallo\")' zurück?",
+        "answers": ["5", "4", "Fehler"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Die Funktion zählt die Anzahl der Zeichen im String."
+      },
+      {
+        "id": "python-9",
+        "question": "Was ist eine Liste in Python?",
+        "answers": ["Ein geordneter, veränderbarer Datentyp", "Ein unveränderbarer Datentyp", "Eine mathematische Funktion"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Listen können mit eckigen Klammern geschrieben werden."
+      },
+      {
+        "id": "python-10",
+        "question": "Wie nennt man eine Funktion, die sich selbst aufruft?",
+        "answers": ["Iterator", "Rekursion", "Generator"],
+        "correct": 1,
+        "difficulty": "hard",
+        "hint": "Diese Technik wird oft in Algorithmen wie der Berechnung von Fakultäten verwendet."
       }
     ]
   },
@@ -26,7 +98,11 @@
       {
         "id": "java-1",
         "question": "Was ist die Hauptklasse in jeder Java-Anwendung?",
-        "answers": ["Main", "Start", "Begin"],
+        "answers": [
+          "Main",
+          "Start",
+          "Begin"
+        ],
         "correct": 0,
         "difficulty": "easy",
         "hint": "Sie enthält die Methode public static void main(String[] args)."
@@ -34,11 +110,88 @@
       {
         "id": "java-2",
         "question": "Welches Schlüsselwort wird verwendet, um eine Klasse zu erben?",
-        "answers": ["extends", "implements", "inherits"],
+        "answers": [
+          "extends",
+          "implements",
+          "inherits"
+        ],
         "correct": 0,
         "difficulty": "medium",
         "hint": "Damit kann eine Subklasse die Eigenschaften einer Superklasse übernehmen."
+      },
+      {
+        "id": "java-3",
+        "question": "Welches Schlüsselwort verhindert das Überschreiben einer Methode?",
+        "answers": ["final", "static", "private"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Dieses Schlüsselwort sorgt dafür, dass Methoden nicht von Subklassen überschrieben werden können."
+      },
+      {
+        "id": "java-4",
+        "question": "Was ist das Ergebnis von 5 + \"5\" in Java?",
+        "answers": ["10", "55", "Fehler"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Wenn ein String mit einer Zahl addiert wird, wird die Zahl zu einem String."
+      },
+      {
+        "id": "java-5",
+        "question": "Wie nennt man das Konzept, bei dem mehrere Methoden denselben Namen haben?",
+        "answers": ["Vererbung", "Polymorphie", "Überladung"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Der Methodenname bleibt gleich, aber Parameter unterscheiden sich."
+      },
+      {
+        "id": "java-6",
+        "question": "Was ist das korrekte Dateiende für eine Java-Datei?",
+        "answers": [".class", ".java", ".jar"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Die Datei mit dem Quellcode endet mit dieser Endung."
+      },
+      {
+        "id": "java-7",
+        "question": "Welche Schleife eignet sich am besten, wenn die Anzahl der Durchläufe vorher bekannt ist?",
+        "answers": ["while", "do-while", "for"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Diese Schleife enthält Zähler, Bedingung und Inkrement in einer Zeile."
+      },
+      {
+        "id": "java-8",
+        "question": "Was passiert, wenn eine Methode als 'static' deklariert ist?",
+        "answers": [
+          "Sie kann nur aus Objekten aufgerufen werden",
+          "Sie kann ohne Objekt aufgerufen werden",
+          "Sie wird bei jedem Objekt neu erzeugt"
+        ],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Statische Methoden gehören zur Klasse, nicht zu einzelnen Instanzen."
+      },
+      {
+        "id": "java-9",
+        "question": "Welche Ausnahme tritt auf, wenn man auf ein nicht gesetztes Objekt zugreift?",
+        "answers": ["NullPointerException", "IOException", "ArrayIndexOutOfBoundsException"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Sie tritt auf, wenn ein Objekt null ist und darauf zugegriffen wird."
+      },
+      {
+        "id": "java-10",
+        "question": "Was ist eine Schnittstelle (Interface) in Java?",
+        "answers": [
+          "Eine Klasse mit Konstruktoren",
+          "Eine abstrakte Klasse mit konkreten Methoden",
+          "Ein Vertrag, der Methoden vorgibt, aber nicht implementiert"
+        ],
+        "correct": 2,
+        "difficulty": "hard",
+        "hint": "Interfaces definieren nur Methodenköpfe, keine Implementierungen."
       }
+
     ]
   },
   "c": {
@@ -47,7 +200,11 @@
       {
         "id": "c-1",
         "question": "Welche Header-Datei wird benötigt, um mit printf zu arbeiten?",
-        "answers": ["stdio.h", "stdlib.h", "string.h"],
+        "answers": [
+          "stdio.h",
+          "stdlib.h",
+          "string.h"
+        ],
         "correct": 0,
         "difficulty": "easy",
         "hint": "Diese Datei stellt Standardfunktionen wie printf und scanf bereit."
@@ -55,11 +212,80 @@
       {
         "id": "c-2",
         "question": "Was ist das Ergebnis von 10 / 4 in C (Ganzzahldivision)?",
-        "answers": ["2.5", "2", "3"],
+        "answers": [
+          "2.5",
+          "2",
+          "3"
+        ],
         "correct": 1,
         "difficulty": "medium",
         "hint": "Wenn du zwei ganze Zahlen dividierst, wird die Nachkommastelle abgeschnitten."
+      },
+      {
+        "id": "c-3",
+        "question": "Welche Schleife wird mindestens einmal ausgeführt, auch wenn die Bedingung falsch ist?",
+        "answers": ["for", "while", "do-while"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Bei dieser Schleife steht die Bedingung am Ende."
+      },
+      {
+        "id": "c-4",
+        "question": "Welche Datentypen gibt es in C für ganze Zahlen?",
+        "answers": ["int, float", "char, double", "int, short, long"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Diese Typen unterscheiden sich in ihrer Größe und dem Speicherverbrauch."
+      },
+      {
+        "id": "c-5",
+        "question": "Was bedeutet das Symbol '%' in C?",
+        "answers": ["Division", "Modulo", "Pointer"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Es liefert den Rest einer Division."
+      },
+      {
+        "id": "c-6",
+        "question": "Wozu dient die Header-Datei 'string.h'?",
+        "answers": ["Dateien einlesen", "Zeichenketten verarbeiten", "Mathematische Berechnungen"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Sie enthält Funktionen wie strcpy oder strlen."
+      },
+      {
+        "id": "c-7",
+        "question": "Wie kennzeichnet man Kommentare in C?",
+        "answers": ["# Kommentar", "// Kommentar", "<!-- Kommentar -->"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Diese Art von Kommentar wurde aus C++ übernommen."
+      },
+      {
+        "id": "c-8",
+        "question": "Was passiert, wenn man auf ein nicht initialisiertes Pointer zeigt?",
+        "answers": ["Fehler zur Laufzeit", "Das Programm funktioniert normal", "Der Wert ist immer 0"],
+        "correct": 0,
+        "difficulty": "hard",
+        "hint": "Solche Pointer können zu 'Segmentation Faults' führen."
+      },
+      {
+        "id": "c-9",
+        "question": "Welche Schleife eignet sich am besten für das Durchlaufen von Arrays?",
+        "answers": ["while", "for", "do-while"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Die Anzahl der Durchläufe ist bekannt – ideal für diese Schleife."
+      },
+      {
+        "id": "c-10",
+        "question": "Welche Funktion wird beim Start eines C-Programms immer zuerst ausgeführt?",
+        "answers": ["start()", "run()", "main()"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Jedes C-Programm beginnt mit dieser Funktion."
       }
+
     ]
   },
   "web": {
@@ -68,7 +294,11 @@
       {
         "id": "web-1",
         "question": "Was macht das HTML-Tag <a>?",
-        "answers": ["Erstellt einen Absatz", "Verlinkt zu einer anderen Seite", "Bindet ein Bild ein"],
+        "answers": [
+          "Erstellt einen Absatz",
+          "Verlinkt zu einer anderen Seite",
+          "Bindet ein Bild ein"
+        ],
         "correct": 1,
         "difficulty": "easy",
         "hint": "Das Element wird oft mit einem 'href'-Attribut verwendet."
@@ -76,13 +306,459 @@
       {
         "id": "web-2",
         "question": "Welche Eigenschaft in CSS ändert die Hintergrundfarbe eines Elements?",
-        "answers": ["color", "background-color", "border-color"],
+        "answers": [
+          "color",
+          "background-color",
+          "border-color"
+        ],
         "correct": 1,
         "difficulty": "easy",
         "hint": "Sie beginnt mit 'background' und wird häufig mit HEX oder RGB-Werten kombiniert."
+      },
+      {
+        "id": "web-3",
+        "question": "Welcher HTML-Tag wird für Überschriften verwendet?",
+        "answers": ["<p>", "<header>", "<h1> bis <h6>"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Es gibt 6 Stufen, von groß nach klein."
+      },
+      {
+        "id": "web-4",
+        "question": "Was bewirkt das HTML-Attribut 'alt' bei einem <img>-Tag?",
+        "answers": ["Es zeigt ein Bild in hoher Qualität", "Es beschreibt das Bild", "Es verlinkt das Bild"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Dieses Attribut ist wichtig für Barrierefreiheit und SEO."
+      },
+      {
+        "id": "web-5",
+        "question": "Wie wird in CSS ein Element zentriert (horizontal, mit Text)?",
+        "answers": ["text-align: center;", "align: middle;", "center: true;"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Diese Eigenschaft wird oft bei <div> mit Text genutzt."
+      },
+      {
+        "id": "web-6",
+        "question": "Welches Attribut wird genutzt, um ein Eingabefeld im HTML-Formular zu machen?",
+        "answers": ["<text>", "<input>", "<field>"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Es gibt verschiedene Typen wie 'text', 'password', 'email'."
+      },
+      {
+        "id": "web-7",
+        "question": "Welche CSS-Eigenschaft ändert die Schriftgröße?",
+        "answers": ["font-weight", "font-size", "text-size"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Sie kann Werte wie px, em oder % annehmen."
+      },
+      {
+        "id": "web-8",
+        "question": "Welche HTTP-Methode wird benutzt, um Daten zu senden (z.B. Formular)?",
+        "answers": ["GET", "SEND", "POST"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Diese Methode sendet Daten im Body, nicht in der URL."
+      },
+      {
+        "id": "web-9",
+        "question": "Was ist der Zweck von CSS?",
+        "answers": ["Datenbankzugriff", "Design und Layout", "Fehlerbehandlung"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Es beeinflusst das Aussehen von HTML-Seiten."
+      },
+      {
+        "id": "web-10",
+        "question": "Wie definiert man eine CSS-Klasse im HTML?",
+        "answers": ["id='name'", "style='name'", "class='name'"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Damit kann man gezielt Elemente im CSS ansprechen."
       }
+
+    ]
+  },
+  "security": {
+    "title": "Teste dein Wissen über IT-Security!",
+    "questions": [
+      {
+        "id": "security-1",
+        "question": "Was versteht man unter Phishing?",
+        "answers": [
+          "Ein Computervirus",
+          "Ein Versuch, über gefälschte Nachrichten an vertrauliche Daten zu kommen",
+          "Ein Angriff auf Server-Hardware"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Phishing zielt darauf ab, Nutzer zur Preisgabe sensibler Daten zu verleiten."
+      },
+      {
+        "id": "security-2",
+        "question": "Wofür steht die Abkürzung 'VPN'?",
+        "answers": [
+          "Virtual Personal Network",
+          "Virtual Private Network",
+          "Verified Protocol Network"
+        ],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Ein VPN schützt deine Verbindung durch einen sicheren Tunnel."
+      },
+      {
+        "id": "security-3",
+        "question": "Was bedeutet '2FA' in der IT-Sicherheit?",
+        "answers": ["Zweifacher Angriff", "Zwei-Faktor-Authentifizierung", "Zentrale Firewall-Anfrage"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Dabei wird ein zusätzlicher Sicherheitsfaktor wie ein Code aufs Handy verwendet."
+      },
+      {
+        "id": "security-4",
+        "question": "Was ist ein sicheres Passwort?",
+        "answers": ["12345678", "Passwort", "V3rG#28s!"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Sichere Passwörter enthalten Groß-/Kleinbuchstaben, Zahlen und Sonderzeichen."
+      },
+      {
+        "id": "security-5",
+        "question": "Wofür steht die Abkürzung 'VPN'?",
+        "answers": ["Virtual Protected Network", "Verified Private Node", "Virtual Private Network"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Ein VPN schützt deine Verbindung, besonders in öffentlichen Netzwerken."
+      },
+      {
+        "id": "security-6",
+        "question": "Was ist Phishing?",
+        "answers": ["Ein Hackerangriff auf Server", "Das Abfangen von Daten im WLAN", "Ein Versuch, sensible Daten per Fake-Mail zu stehlen"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Oft getarnt als echte Nachricht einer Bank oder eines Dienstes."
+      },
+      {
+        "id": "security-7",
+        "question": "Welche Datei verschlüsselt Windows beim Benutzerlogin?",
+        "answers": [".login", "passwd.txt", "SAM"],
+        "correct": 2,
+        "difficulty": "hard",
+        "hint": "Sie enthält Hashes der Benutzerkennwörter."
+      },
+      {
+        "id": "security-8",
+        "question": "Was bedeutet 'Social Engineering'?",
+        "answers": ["Software manipulieren", "Menschen zur Preisgabe von Infos verleiten", "Hardware hacken"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Das Ziel ist oft, durch Täuschung Passwörter oder Zugang zu erhalten."
+      },
+      {
+        "id": "security-9",
+        "question": "Welche Verschlüsselungsart nutzt bei HTTPS asymmetrische Schlüssel?",
+        "answers": ["AES", "RSA", "MD5"],
+        "correct": 1,
+        "difficulty": "hard",
+        "hint": "Diese Methode nutzt ein Schlüsselpaar – öffentlich und privat."
+      },
+      {
+        "id": "security-10",
+        "question": "Was ist ein Zero-Day-Exploit?",
+        "answers": ["Ein Angriff, der am ersten Tag eines Monats stattfindet", "Ein bekanntes Sicherheitsupdate", "Ein unbekannter Fehler, der bereits ausgenutzt wird"],
+        "correct": 2,
+        "difficulty": "hard",
+        "hint": "Solche Lücken sind besonders gefährlich, weil es noch keinen Patch gibt."
+      }
+
+    ]
+  },
+  "linux": {
+    "title": "Teste dein Wissen über Linux!",
+    "questions": [
+      {
+        "id": "linux-1",
+        "question": "Welcher Befehl zeigt den aktuellen Arbeitsordner an?",
+        "answers": [
+          "ls",
+          "cd",
+          "pwd"
+        ],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Dieser Befehl steht für 'print working directory'."
+      },
+      {
+        "id": "linux-2",
+        "question": "Was bedeutet das Symbol './' vor einem Dateinamen?",
+        "answers": [
+          "Root-Verzeichnis",
+          "Aktueller Ordner",
+          "Benutzerverzeichnis"
+        ],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Es wird genutzt, um Dateien oder Programme im aktuellen Verzeichnis auszuführen."
+      },
+      {
+        "id": "linux-3",
+        "question": "Mit welchem Befehl listest du Dateien im aktuellen Verzeichnis auf?",
+        "answers": ["ls", "pwd", "dir"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Der Befehl zeigt Dateien und Ordner im aktuellen Verzeichnis an."
+      },
+      {
+        "id": "linux-4",
+        "question": "Was bewirkt der Befehl 'chmod +x datei.sh'?",
+        "answers": ["Er löscht die Datei", "Er macht die Datei ausführbar", "Er verschiebt die Datei"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Dieser Befehl ändert die Rechte einer Datei."
+      },
+      {
+        "id": "linux-5",
+        "question": "Wofür steht der Befehl 'sudo'?",
+        "answers": ["Superuser Do", "System Update", "Sub Directory Output"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Damit kannst du Befehle mit Admin-Rechten ausführen."
+      },
+      {
+        "id": "linux-6",
+        "question": "Was zeigt der Befehl 'top' an?",
+        "answers": ["Die aktuell laufenden Prozesse", "Die aktuellsten Dateien", "Die größte Datei im Ordner"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Dieser Befehl zeigt die CPU- und RAM-Auslastung an."
+      },
+      {
+        "id": "linux-7",
+        "question": "Wie ändert man das aktuelle Verzeichnis?",
+        "answers": ["mv", "cd", "cp"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Dieser Befehl steht für 'change directory'."
+      },
+      {
+        "id": "linux-8",
+        "question": "Wie zeigt man den Inhalt einer Textdatei an?",
+        "answers": ["cat", "ls", "run"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Dieser Befehl gibt den gesamten Inhalt auf der Konsole aus."
+      },
+      {
+        "id": "linux-9",
+        "question": "Was bedeutet './' vor einem Dateinamen?",
+        "answers": ["Gehe ins Root-Verzeichnis", "Datei aus dem aktuellen Verzeichnis ausführen", "Kommentare in der Datei anzeigen"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Damit führst du Skripte oder Programme im aktuellen Verzeichnis aus."
+      },
+      {
+        "id": "linux-10",
+        "question": "Welche Datei enthält typischerweise die Benutzerinformationen?",
+        "answers": ["/etc/passwd", "/bin/bash", "/home/user"],
+        "correct": 0,
+        "difficulty": "hard",
+        "hint": "Diese Datei enthält alle registrierten Benutzer des Systems."
+      }
+
+    ]
+  },
+  "hardware": {
+    "title": "Teste dein Wissen über Computerhardware!",
+    "questions": [
+      {
+        "id": "hardware-1",
+        "question": "Welche Komponente ist das 'Gehirn' des Computers?",
+        "answers": [
+          "RAM",
+          "Festplatte",
+          "CPU"
+        ],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Sie führt die Befehle eines Programms aus."
+      },
+      {
+        "id": "hardware-2",
+        "question": "Wofür steht die Abkürzung 'SSD'?",
+        "answers": [
+          "Secure Storage Device",
+          "Solid State Drive",
+          "Super Speed Disk"
+        ],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Dieses Speichermedium ist schneller als eine klassische HDD."
+      },
+      {
+        "id": "hardware-3",
+        "question": "Welche Komponente ist hauptsächlich für die Verarbeitung von Daten zuständig?",
+        "answers": ["RAM", "CPU", "SSD"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Sie wird auch als Prozessor bezeichnet."
+      },
+      {
+        "id": "hardware-4",
+        "question": "Welche Einheit misst die Taktrate einer CPU?",
+        "answers": ["Hz", "Byte", "Volt"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Diese Einheit beschreibt, wie viele Zyklen pro Sekunde die CPU schafft."
+      },
+      {
+        "id": "hardware-5",
+        "question": "Welche Komponente speichert Daten dauerhaft, auch ohne Strom?",
+        "answers": ["RAM", "GPU", "Festplatte"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "SSD und HDD gehören zu dieser Kategorie."
+      },
+      {
+        "id": "hardware-6",
+        "question": "Wofür steht die Abkürzung 'GPU'?",
+        "answers": ["General Processing Unit", "Graphical Performance Utility", "Graphics Processing Unit"],
+        "correct": 2,
+        "difficulty": "medium",
+        "hint": "Diese Einheit ist besonders wichtig für Spiele und Bildverarbeitung."
+      },
+      {
+        "id": "hardware-7",
+        "question": "Welche Komponente wird am meisten beansprucht bei der Videowiedergabe?",
+        "answers": ["Soundkarte", "GPU", "Netzteil"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Sie übernimmt die Grafikberechnung."
+      },
+      {
+        "id": "hardware-8",
+        "question": "Was ist typischerweise die Funktion eines Netzteils (PSU)?",
+        "answers": ["Daten speichern", "Komponenten kühlen", "Strom umwandeln und verteilen"],
+        "correct": 2,
+        "difficulty": "easy",
+        "hint": "Ohne diese Komponente bekommt der PC keinen Strom."
+      },
+      {
+        "id": "hardware-9",
+        "question": "Was passiert, wenn der Arbeitsspeicher (RAM) voll ist?",
+        "answers": ["Das System stürzt sofort ab", "Daten werden auf die Festplatte ausgelagert", "Die CPU schaltet sich ab"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Dies wird als 'Swap' bezeichnet."
+      },
+      {
+        "id": "hardware-10",
+        "question": "Welche Schnittstelle wird meist verwendet, um eine SSD direkt aufs Mainboard zu stecken?",
+        "answers": ["SATA", "USB", "M.2"],
+        "correct": 2,
+        "difficulty": "hard",
+        "hint": "Diese Verbindung ist schneller als klassische SATA-Anschlüsse."
+      }
+
+    ]
+  },
+  "printer": {
+    "title": "Teste dein Wissen über Drucker!",
+    "questions": [
+      {
+        "id": "printer-1",
+        "question": "Welcher Druckertyp verwendet Tonerpulver statt Tinte?",
+        "answers": [
+          "Tintenstrahldrucker",
+          "Laserdrucker",
+          "Nadeldrucker"
+        ],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Er arbeitet mit elektrisch geladener Bildtrommel."
+      },
+      {
+        "id": "printer-2",
+        "question": "Was bedeutet 'DPI' bei Druckern?",
+        "answers": [
+          "Dots per Inch",
+          "Data Print Interface",
+          "Digital Print Index"
+        ],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Je höher dieser Wert, desto feiner ist das Druckbild."
+      },
+      {
+        "id": "printer-3",
+        "question": "Wofür steht die Abkürzung 'CMYK' im Druckbereich?",
+        "answers": ["Color, Magenta, Yellow, Key", "Cyan, Magenta, Yellow, Key", "Cyan, Mint, Yellow, Black"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Die Farben werden im Vierfarbdruck verwendet, wobei 'Key' für Schwarz steht."
+      },
+      {
+        "id": "printer-4",
+        "question": "Welcher Anschluss wird häufig für moderne Drucker verwendet?",
+        "answers": ["USB", "VGA", "HDMI"],
+        "correct": 0,
+        "difficulty": "easy",
+        "hint": "Dieser Anschluss wird auch oft für Tastaturen und Mäuse verwendet."
+      },
+      {
+        "id": "printer-5",
+        "question": "Was beschreibt der Begriff 'Duplexdruck'?",
+        "answers": ["Drucken in Farbe", "Beidseitiges Drucken", "Drucken über WLAN"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Diese Funktion spart Papier, da sie Vorder- und Rückseite nutzt."
+      },
+      {
+        "id": "printer-6",
+        "question": "Was ist typisch für Thermodrucker?",
+        "answers": ["Sie benötigen keine Tinte oder Toner", "Sie arbeiten besonders laut", "Sie können nur in Farbe drucken"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Diese Drucker nutzen Hitze, um auf spezielles Papier zu drucken."
+      },
+      {
+        "id": "printer-7",
+        "question": "Was passiert beim Kalibrieren eines Druckers?",
+        "answers": ["Druckköpfe werden ausgerichtet", "Tinte wird gewechselt", "Papier wird zugeschnitten"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Es dient der korrekten Farbausrichtung und Druckqualität."
+      },
+      {
+        "id": "printer-8",
+        "question": "Wie nennt man den Teil eines Tintenstrahldruckers, der die Farbe aufs Papier bringt?",
+        "answers": ["Tintenmodul", "Druckkopf", "Laserkopf"],
+        "correct": 1,
+        "difficulty": "easy",
+        "hint": "Er enthält winzige Düsen für die Tinte."
+      },
+      {
+        "id": "printer-9",
+        "question": "Warum sollte man einen Drucker nicht längere Zeit ungenutzt lassen?",
+        "answers": ["Weil sich der Druckkopf festsetzen kann", "Weil er dann Strom zieht", "Weil Papier Feuchtigkeit aufnimmt"],
+        "correct": 0,
+        "difficulty": "medium",
+        "hint": "Besonders Tintenstrahldrucker leiden unter eingetrockneter Tinte."
+      },
+      {
+        "id": "printer-10",
+        "question": "Welche Technologie ist für besonders hohe Druckgeschwindigkeit bekannt?",
+        "answers": ["Tintenstrahldruck", "Laserdruck", "Nadeldruck"],
+        "correct": 1,
+        "difficulty": "medium",
+        "hint": "Diese Druckerart wird oft in Büros eingesetzt, wo viel und schnell gedruckt werden muss."
+      }
+
     ]
   }
 }
+
 
 

@@ -122,18 +122,30 @@ function initBuyedItems() {
     }
 }
 
-//Gibt die gekauften Tipps zurück
+//Gibt die gekauften Items zurück
 function getBuyedItems() {
     return JSON.parse(localStorage.getItem(KEYS.BUYED_ITEMS)) || [];
 }
 
-//Fügt einen Tipp zur Liste hinzu
+//Fügt ein Item zur Liste hinzu
 function addBuyedItems(item) {
     let buyedItems = getBuyedItems();
     if (buyedItems.includes(item)) {
         return 0;
     }
     buyedItems.push(item);
+    localStorage.setItem(KEYS.BUYED_ITEMS, JSON.stringify(buyedItems));
+
+    return 1;
+}
+
+//Entfernt ein bestimmtes Item
+function removeBuyedItems(item) {
+    let buyedItems = getBuyedItems();
+    if (!(buyedItems.includes(item))) {
+        return 0;
+    }
+    buyedItems.splice(buyedItems.indexOf(item), 1);
     localStorage.setItem(KEYS.BUYED_ITEMS, JSON.stringify(buyedItems));
 
     return 1;

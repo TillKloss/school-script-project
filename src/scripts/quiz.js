@@ -8,6 +8,8 @@ let topic = "";
 
 $(document).ready(function () {
     $("#quiz-credit-value").text(getCredits());
+    updateCreditsUI(getCredits());
+
 
     const params = new URLSearchParams(window.location.search);
     topic = params.get('topic'); //topic wird geholt
@@ -27,8 +29,10 @@ $(document).ready(function () {
 
     //Listener für Grundfunktionalität der Buttons
     $("#grid-hint-card").click(function () {
-        calcHint();
-        hintToast()
+        let check = calcHint();
+        if (check) {
+            hintToast()
+        }
     })
     $(".grid-answer-card").click(function () {
         checkAnswer(this, correctAnswer, questionDifficulty);
@@ -87,7 +91,6 @@ function checkAnswer(answerObj, correctAnswer) {
             }, 400)
         }, 1000)
 
-        let res;
         if (addSolvedQuestion(currQuestion)) {
 
             //Auszahlung nach Schwierigkeit
@@ -95,23 +98,20 @@ function checkAnswer(answerObj, correctAnswer) {
             switch (questionDifficulty) {
                 case "easy":
                     value = 10;
-                    res = addCredits(value);
                     break;
                 case "medium":
                     value = 20;
-                    res = addCredits(value);
                     break;
                 case "hard":
                     value = 30;
-                    res = addCredits(value);
                     break;
                 default:
                     break;
             }
+            addCredits(value);
         }
 
-        res = getCredits();
-        updateCreditsUI(res);
+        updateCreditsUI(getCredits());
 
         //nächste Frage
         setTimeout(function () {
@@ -134,21 +134,36 @@ function checkAnswer(answerObj, correctAnswer) {
 
 //Zieht Credits beim Tipp kauf ab
 function calcHint() {
+    let check = 1;
     if (addBuyedHints(hintData)) {
-
         let res;
         let value = 0;
         switch (questionDifficulty) {
             case "easy":
                 value = 5;
+                if (!(getCredits() >= value)) {
+                    hintNotEnoughCreditsToast();
+                    check = 0
+                    break;
+                }
                 res = removeCredits(value)
                 break;
             case "medium":
                 value = 10;
+                if (!(getCredits() >= value)) {
+                    hintNotEnoughCreditsToast();
+                    check = 0
+                    break;
+                }
                 res = removeCredits(value);
                 break;
             case "hard":
                 value = 15;
+                if (!(getCredits() >= value)) {
+                    hintNotEnoughCreditsToast();
+                    check = 0
+                    break;
+                }
                 res = removeCredits(value);
                 break;
             default:
@@ -157,6 +172,15 @@ function calcHint() {
         res = getCredits();
         updateCreditsUI(res);
     }
+    return check;
+}
+
+//Zeigt eine Fehlermeldung an (nicht genügend Credits)
+function hintNotEnoughCreditsToast() {
+    $("#quiz-hint-toast").text("Nicht genügend Credits!").fadeIn(400);
+    setTimeout(function () {
+        $("#quiz-hint-toast").fadeOut(400);
+    },4500);
 }
 
 //Zeigt den Tipp an

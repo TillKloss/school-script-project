@@ -111,6 +111,12 @@ header {
     padding: 20px;
 }
 
+.header-credit-img {
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+}
+
 .nav-list {
     list-style: none;
 }
@@ -141,6 +147,12 @@ header {
 
 .category {
     margin-bottom: 20px;
+}
+
+#shop-toast {
+    text-align: center;
+    opacity: 0.6;
+    margin-bottom: 30px;
 }
 
 .category h2 {
