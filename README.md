@@ -10,13 +10,13 @@ Ich werde eine interaktive Quiz- & Lernplattform entwickeln, die es Nutzern erm�
 - **Kategorisierung der Quizfragen** zur thematischen Auswahl (✓)
 - **Belohnungssystem** zur langfristigen Motivation der Nutzer 
   - **Credits sammeln** für richtige Antworten (✓)
-  - **Freischaltungen** für verschiedene Themes (Dark Mode, Farbschemata)  
-  - **Zusätzliche Fragenkataloge** (z. B. Python, Java, C, Netzwerktechnik)  
+  - **Freischaltungen** für verschiedene Themes (Dark Mode, Farbschemata) (✓)
+  - **Zusätzliche Fragenkataloge** (z. B. Python, Java, C, Netzwerktechnik) (✗ | standartmäßig enthalten)
 
 ### Erweiterungen (optional, falls Zeit bleibt)
 - **Hosting & Speicherung** über Cloudflare Workers für eine längerfristige Erweiterbarkeit (✓)
-- **Highscore-Ranglisten** mit serverseitiger Speicherung  
-- **Login** zur Sicherung des eigenen Fortschritts
+- **Highscore-Ranglisten** mit serverseitiger Speicherung (✗)
+- **Login** zur Sicherung des eigenen Fortschritts (✗)
 
 ## Erklärungen
 Allgemeine Erklärungen zu Kernfeatures auf der Webseite.
@@ -27,6 +27,7 @@ für einen Tipp werden anhand der Schwierigkeit berechnet.
 - **easy** Belohnung: 10 Credits | Kosten Tipp: 5 Credits
 - **medium** Belohnung 20 Credits | Kosten für Tipp: 10 Credits
 - **hard** Belohnung 30 Credits | Kosten für Tipp: 15 Credits
+Falsch beantwortete Fragen können nochmal beantwortet werden.
 
 ## Hosting über Cloudflare
 *https://knowplex.pages.dev/*
