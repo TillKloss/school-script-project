@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
-body.dark-mode {
+body.autumn-theme {
+    --primary-color-rgb: 203, 103, 37;
     --primary-color: #CB6725;
     --secondary-color: #965A38;
     --contrast-color: #FFD166;

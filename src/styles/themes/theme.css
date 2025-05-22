@@ -13,3 +13,8 @@
     --error-color: #DC3545;
     --warning-color: #FFC107;
 }
+
+.grid-answer-card.reset-bg {
+    background-color: var(--surface-color) !important;
+    transition: background-color 0.4s ease;
+}

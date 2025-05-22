@@ -3,7 +3,8 @@ const KEYS = {
     CREDITS: "credits",
     SOLVED_QUESTION: "solved_question",
     BUYED_HINT: "buyed_hint",
-    BUYED_ITEMS: "buyed_items"
+    BUYED_ITEMS: "buyed_items",
+    ACTIVE_THEME: "active_theme"
 };
 
 //-----------------------CREDIT SECTION--------------------------
@@ -154,4 +155,29 @@ function removeBuyedItems(item) {
 //debug Funktion
 function resetBuyedItems() {
     localStorage.removeItem(KEYS.BUYED_ITEMS);
+}
+
+//-----------------------THEME SECTION--------------------------
+
+//Initialisiert die Theme-Speicherung
+function initTheme() {
+    if (localStorage.getItem(KEYS.ACTIVE_THEME) === null) {
+        localStorage.setItem(KEYS.ACTIVE_THEME, "");  // Standard ist kein Theme
+    }
+}
+
+//Gibt das aktuell aktive Theme zurück
+function getActiveTheme() {
+    return localStorage.getItem(KEYS.ACTIVE_THEME) || "";
+}
+
+//Setzt das aktive Theme
+function setActiveTheme(themeID) {
+    localStorage.setItem(KEYS.ACTIVE_THEME, themeID);
+    return themeID;
+}
+
+//Debug Funktion
+function resetActiveTheme() {
+    localStorage.removeItem(KEYS.ACTIVE_THEME);
 }

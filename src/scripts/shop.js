@@ -1,8 +1,15 @@
 $(document).ready(function () {
+    initTheme();
+
+    //Gespeichertes Theme wird aktiviert, falls vorhanden
+    const savedTheme = getActiveTheme();
+    if (savedTheme) {
+        activateTheme(savedTheme);
+    }
+
     updateBuyedItemsUI();
     addToBuyedItems();
     updateCreditsUI(getCredits());
-
 });
 
 //Zeigt eine Fehlermeldung an (nicht genügend Credits)
@@ -13,23 +20,32 @@ function notEnoughCreditsToast() {
     },4500);
 }
 
-//Fügt die geklickte Card zu den gekauften Items hinzu
+//Fügt das Item hinzu
 function addToBuyedItems() {
-    const themes = ["dark-theme", "cyber-theme", "autumn-theme"]; //verworfen: dasselbe auch für Lektionen und sontiges machen in dieser Funktion -> copy paste isnt waste
+    const themes = ["dark-theme", "cyber-theme", "autumn-theme"];
     themes.forEach(function (themeID) {
         $("#" + themeID).on("click", function () {
-            if (addBuyedItems(themeID)) { //addBuyedItems hat einen return Wert
-                const price = $("#" + themeID + "-price").text();
-                console.log(price);
-                //check ob genug credits
-                if(!(getCredits() >= price)) {
+            const alreadyBought = getBuyedItems().includes(themeID);
+
+            if (alreadyBought) {
+                activateTheme(themeID);
+                return;
+            }
+
+            if (addBuyedItems(themeID)) {
+                const price = parseInt($("#" + themeID + "-price").text());
+
+                if (getCredits() < price) {
                     notEnoughCreditsToast();
                     removeBuyedItems(themeID);
                     return;
                 }
+
                 removeCredits(price);
                 updateBuyedItemsUI();
                 updateCreditsUI(getCredits());
+
+                activateTheme(themeID);
             }
         });
     });

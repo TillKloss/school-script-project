@@ -10,6 +10,13 @@ $(document).ready(function () {
     $("#quiz-credit-value").text(getCredits());
     updateCreditsUI(getCredits());
 
+    initTheme();
+
+    const savedTheme = getActiveTheme();
+    if (savedTheme) {
+        activateTheme(savedTheme);
+    }
+
 
     const params = new URLSearchParams(window.location.search);
     topic = params.get('topic'); //topic wird geholt
@@ -80,56 +87,56 @@ function checkAnswer(answerObj, correctAnswer) {
     let successColor = getComputedStyle(document.documentElement).getPropertyValue("--success-color");
     let errorColor = getComputedStyle(document.documentElement).getPropertyValue("--error-color");
     //Farben + Animation
+    let $card = $("#" + answerObj.id);
+
     if (parseInt(correctAnswer) === parseInt(numAnswer)) {
         $(".grid-answer-card").off("click");
-        $("#"+answerObj.id).animate({
+
+        $card.animate({
             backgroundColor: successColor
-        },400)
-        setTimeout(function () {
-            $("#"+answerObj.id).animate({
-                backgroundColor: backgroundColor
-            }, 400)
-        }, 1000)
+        }, 400);
+
+        setTimeout(() => {
+            $card.css("backgroundColor", "");
+            $card.addClass("reset-bg");
+        }, 1000);
+
+        setTimeout(() => {
+            $card.removeClass("reset-bg");
+        }, 1400);
 
         if (addSolvedQuestion(currQuestion)) {
-
-            //Auszahlung nach Schwierigkeit
             let value = 0;
             switch (questionDifficulty) {
-                case "easy":
-                    value = 10;
-                    break;
-                case "medium":
-                    value = 20;
-                    break;
-                case "hard":
-                    value = 30;
-                    break;
-                default:
-                    break;
+                case "easy": value = 10; break;
+                case "medium": value = 20; break;
+                case "hard": value = 30; break;
             }
             addCredits(value);
         }
 
         updateCreditsUI(getCredits());
 
-        //nächste Frage
-        setTimeout(function () {
+        setTimeout(() => {
             currentQuizIndex++;
             showQuestion(currentQuizIndex);
-        },1500);
-    }
-    else {
-        //Farben + Animation
-        $("#"+answerObj.id).animate({
+        }, 1500);
+
+    } else {
+        $card.animate({
             backgroundColor: errorColor
-        }, 400)
-        setTimeout(function () {
-            $("#"+answerObj.id).animate({
-                backgroundColor: backgroundColor
-            }, 400)
-        }, 1000)
+        }, 400);
+
+        setTimeout(() => {
+            $card.css("backgroundColor", "");
+            $card.addClass("reset-bg");
+        }, 1000);
+
+        setTimeout(() => {
+            $card.removeClass("reset-bg");
+        }, 1400);
     }
+
 }
 
 //Zieht Credits beim Tipp kauf ab
