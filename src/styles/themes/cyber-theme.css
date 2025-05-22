@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
-body.dark-mode {
+body.cyber-theme {
+    --primary-color-rgb: 0, 255, 195;
     --primary-color: #00FFC3;
     --secondary-color: #00A2FF;
     --contrast-color: #FF00D4;
