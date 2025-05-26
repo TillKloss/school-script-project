@@ -30,5 +30,13 @@ für einen Tipp werden anhand der Schwierigkeit berechnet.
 
 Falsch beantwortete Fragen können nochmal beantwortet werden.
 
+### Credit-Shop
+Im Credit-Shop können Themes erworben werden, welche nach dem Kauf auf jeden Bereich angewendet werden.
+- **dark-theme** Kosten 100 Credits
+- **autumn-theme** Kosten 150 Credits
+- **cyber-theme** Kosten 250 Credits
+
+Bereits gekaufte Themes können durch erneuten Klick gewechselt werden.
+
 ## Hosting über Cloudflare
 *https://knowplex.pages.dev/*
