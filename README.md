@@ -1,4 +1,8 @@
-# Quiz- & Lernplattform
+# Quiz- und Lernplattform
+
+Die Seite ist dauerhaft über
+https://knowplex.pages.dev <br>
+erreichbar.
 
 ## Projektbeschreibung
 Ich werde eine interaktive Quiz- & Lernplattform entwickeln, die es Nutzern ermöglicht, Fragen aus verschiedenen Kategorien zu beantworten und dabei ihren Fortschritt zu speichern. Das Projekt wird mit HTML, CSS und JavaScript (jQuery) umgesetzt und nutzt zunächst Local Storage zur Speicherung. Falls Zeit bleibt, kann eine Online-Speicherung über Cloudflare Workers integriert werden.
@@ -33,7 +37,7 @@ Falsch beantwortete Fragen können nochmal beantwortet werden.
 ### Credit-Shop
 Im Credit-Shop können Themes erworben werden, welche nach dem Kauf auf jeden Bereich angewendet werden.
 - **dark-theme** Kosten 100 Credits
-- **autumn-theme** Kosten 150 Credits
+- **autumn-theme** Kosten 175 Credits
 - **cyber-theme** Kosten 250 Credits
 
 Bereits gekaufte Themes können durch erneuten Klick gewechselt werden.
