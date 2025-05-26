@@ -36,9 +36,15 @@ Falsch beantwortete Fragen können nochmal beantwortet werden.
 
 ### Credit-Shop
 Im Credit-Shop können Themes erworben werden, welche nach dem Kauf auf jeden Bereich angewendet werden.
-- **dark-theme** Kosten 100 Credits
-- **autumn-theme** Kosten 175 Credits
-- **cyber-theme** Kosten 250 Credits
+- **dark-theme*** Kosten 100 Credits
+- **autumn-theme*** Kosten 175 Credits
+- **cyber-theme*** Kosten 250 Credits
+
+Zu Testzwecken kann die Funktion <br>
+`activateTheme('themeID')` <br>
+in der Konsole angewendet werden.
+
+\* Kennzeichnet die vorhandenen `themeID`'s
 
 Bereits gekaufte Themes können durch erneuten Klick gewechselt werden.
 
