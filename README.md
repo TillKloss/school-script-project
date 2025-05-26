@@ -9,7 +9,7 @@ Ich werde eine interaktive Quiz- & Lernplattform entwickeln, die es Nutzern erm�
 
 ### Kernelemente
 - **Dynamisches Quizsystem** mit Fragen aus einer JSON-Datei (✓)
-- **Benutzerfreundliche Oberfläche** mit HTML, CSS und jQuery (✓)
+- **Benutzerfreundliche Oberfläche** mit HTML, CSS und jQuery (✓ | nicht responsiv)
 - **Speicherung des Fortschritts und Highscores** per Local Storage (✓)  
 - **Kategorisierung der Quizfragen** zur thematischen Auswahl (✓)
 - **Belohnungssystem** zur langfristigen Motivation der Nutzer 
