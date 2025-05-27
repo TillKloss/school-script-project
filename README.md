@@ -32,7 +32,8 @@ für einen Tipp werden anhand der Schwierigkeit berechnet.
 - **medium** Belohnung 20 Credits | Kosten für Tipp: 10 Credits
 - **hard** Belohnung 30 Credits | Kosten für Tipp: 15 Credits
 
-Falsch beantwortete Fragen können nochmal beantwortet werden.
+Falsch beantwortete Fragen können nochmal beantwortet werden. <br>
+Gekaufte Tipps können kostenlos erneut angezeigt werden.
 
 ### Credit-Shop
 Im Credit-Shop können Themes erworben werden, welche nach dem Kauf auf jeden Bereich angewendet werden.
