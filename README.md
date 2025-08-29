@@ -1,3 +1,6 @@
+# Disclaimer
+Dieses Projekt wurde als Schulaufgabe entwickelt und entspricht bewusst nur den Anforderungen der Aufgabenstellung. Es ist kein Abbild meiner tatsächlichen Fähigkeiten oder meines üblichen Qualitätsstandards.
+
 # Quiz- und Lernplattform
 
 Die Seite ist dauerhaft über
